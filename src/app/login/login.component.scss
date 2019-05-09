@@ -1,0 +1,109 @@
+$theme-color:#3f51b5;
+$white-color:#ffffff;
+$border-color:#707070;
+$title-color:#157eba;
+$input-color:#858585;
+
+// Responsive--------------------------------
+
+$ipad-landscape: "(min-width: 992px) and (max-width: 1199px)";
+$ipad-portrait: "(min-width: 768px) and (max-width: 991px)";
+$mobile: "(max-width: 767px)";
+
+
+.login-bg {
+    border-radius:14px;
+    background: $white-color;
+    height: 503.9px;
+    padding: 0px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    text-align: center;
+    padding: 30px;
+    margin: 20px auto;
+    border: solid 0.5px $border-color;
+    position: absolute;
+  	left: 50%;
+	  top: 50%;
+	  transform: translate(-50%, -50%);
+   width:633.5px;
+    h1 {
+        // font-family: AvenirLTStd;
+        font-size: 48px;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.88;
+        letter-spacing: normal;
+        text-align: center;
+        color: $title-color;
+        margin: 0;
+        padding-bottom: 20px;
+    }
+    button{
+      width: 223.7px;
+  height: 50.4px;
+  border-radius: 5px;
+  border: solid 2px $title-color;
+  background: none;
+  color: $title-color;
+  box-shadow: none;
+  font-size: 20px;
+  font-weight: normal;
+  margin-top:30px;
+  &:hover{
+    background:$title-color;
+    color:$white-color
+  }
+    }
+
+    .mat-form-field{
+      width: 100%;
+
+      input{
+        margin-bottom:0px;
+        border:none;
+        box-shadow: none;
+        font-size: 21px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.86;
+        letter-spacing: normal;
+        text-align: left;
+        color: $input-color;
+        &:focus,&:hover{
+          border:none;
+        }
+
+      }
+
+
+    }
+
+}
+// responsive scss create//
+
+//ipad (min-width: 992px) and (max-width: 1199px) view//
+@media #{$ipad-landscape} {
+
+}
+
+//ipad (min-width: 768px) and (max-width: 991px) view//
+@media #{$ipad-portrait} {
+  .login-bg {
+    width: 80%;
+  }
+}
+
+// max-width: 767px view //
+@media #{$mobile} {
+  .login-bg {
+    width: 80%;
+    top: 0;
+    transform: translate(-50%, 0%);
+    button{
+      width: 80%;
+    }
+  }
+}
+
