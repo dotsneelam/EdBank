@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
+<<<<<<< HEAD
 import {
   MatInputModule,
   MatButtonModule,
@@ -30,6 +31,9 @@ import {
 } from '@angular/material';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
+=======
+import { MatInputModule, MatButtonModule } from '@angular/material';
+>>>>>>> 316f260748c847f4298d2eb1ebe674892fe46019
 
 
 @NgModule({
