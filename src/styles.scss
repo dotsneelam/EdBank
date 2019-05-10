@@ -1,15 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
-
+$placeholder-color:#707070;
+$white-color:#ffffff;
+$sidenav-menu-hover-bg:#56a2cd;
 html, body { height: 100%; }
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
-
+  background:$white-color;
 }
 
 
-body{
-  white-space: normal;
+.mat-card-header-text{
+  width: 100%;
+  margin: 0px 10px !important;
 }
 
 .mat-form-field-flex{
@@ -37,12 +40,22 @@ body{
         text-align: left;
 }
 input::placeholder{
-  color:#707070;
+  color:$placeholder-color;
 }
 .mat-form-field{
   width: 100%;
 }
 .mat-form-field-appearance-outline .mat-form-field-outline-end, .mat-form-field-appearance-outline .mat-form-field-outline-start{
-  border-color: #707070 !important;
+  border-color: $placeholder-color !important;
   outline: none;
+}
+.example-container{
+  top:0px !important;
+  bottom:0px !important;
+}
+.mat-drawer-content{
+  padding-left:10px;
+}
+mat-expansion-panel-header:hover {
+  background: $sidenav-menu-hover-bg !important;
 }

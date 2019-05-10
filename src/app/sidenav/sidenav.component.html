@@ -1,0 +1,111 @@
+<mat-sidenav #sidenav mode="side" opened class="example-sidenav">
+  <div class="left-header-section">
+    <div class="user-img">
+      <img src="assets/img/user-img.jpg" alt="">
+    </div>
+    <div class="user-details">
+      <div class="name">Ravi Sharma</div>
+      <div class="mail">ravisharma123@gmail.com</div>
+      <div class="user">Admin</div>
+    </div>
+  </div>
+  <mat-accordion>
+      <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+                Dashboard
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <!-- add section -->
+          <a mat-list-item  routerLink="/dashboard"  routerLinkActive="mat-accent">Home</a>
+          <!-- add section End -->
+        </mat-expansion-panel>
+    <!-- tab-1 -->
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Community
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <!-- add section -->
+        <ul>
+          <li>
+            <a mat-list-item  routerLink="/table"  routerLinkActive="mat-accent">
+              <span mat-line>Disscussion</span>
+            </a>
+          </li>
+          <li>
+            <a mat-list-item  routerLink="/table"  routerLinkActive="mat-accent">
+              <span mat-line>Groups</span>
+            </a>
+          </li>
+        </ul>
+        <!-- add section End -->
+      </mat-expansion-panel>
+       <!-- End tab-1 -->
+
+        <!-- tab-2 -->
+      <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Job
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <!-- add section -->
+          <ul>
+            <li>
+              <a mat-list-item  routerLink=""  routerLinkActive="mat-accent">
+                <!-- <mat-icon mat-list-icon>home</mat-icon> -->
+                <span mat-line>dummy-crud</span>
+              </a>
+            </li>
+            <li>
+              <a mat-list-item  routerLink=""  routerLinkActive="mat-accent">
+                <!-- <mat-icon mat-list-icon>home</mat-icon> -->
+                <span mat-line>dummy-crud</span>
+              </a>
+            </li>
+          </ul>
+
+          <!-- add section End -->
+        </mat-expansion-panel>
+         <!-- End tab-2 -->
+            <!-- tab-3 -->
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Users
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <!-- add section -->
+        <ul>
+          <li>
+            <a mat-list-item  routerLink=""  routerLinkActive="mat-accent">
+              <!-- <mat-icon mat-list-icon>home</mat-icon> -->
+              <span mat-line>dummy-crud</span>
+            </a>
+          </li>
+          <li>
+            <a mat-list-item  routerLink=""  routerLinkActive="mat-accent">
+              <!-- <mat-icon mat-list-icon>home</mat-icon> -->
+              <span mat-line>dummy-crud</span>
+            </a>
+          </li>
+        </ul>
+
+        <!-- add section End -->
+      </mat-expansion-panel>
+       <!-- End tab-3 -->
+       <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <a mat-list-item  routerLink="/login"  routerLinkActive="mat-accent"> Logout</a>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <!-- add section -->
+        <!-- add section End -->
+      </mat-expansion-panel>
+    </mat-accordion>
+</mat-sidenav>
+
+

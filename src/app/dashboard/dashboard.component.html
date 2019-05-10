@@ -1,0 +1,91 @@
+<ng-container>
+
+  <mat-sidenav-container class="example-container">
+
+    <mat-sidenav #sidenav mode="side" opened class="example-sidenav">
+      <app-sidenav></app-sidenav>
+    </mat-sidenav>
+    <!-- ==============MIDDLE-CONTENT-SECTION============ -->
+
+
+    <mat-sidenav-content>
+      <!-- <main>
+            <router-outlet></router-outlet>
+          </main> -->
+      <div class="row">
+        <div class="col s12">
+          <div class="header-section">
+          <button mat-icon-button fxHide="false" (click)="sidenav.toggle()">
+            <mat-icon>menu</mat-icon>
+          </button>
+          <h1>Dashboard </h1>
+        </div>
+        </div>
+      </div>
+      <!-- ==================== FOUT-SECTION ===================== -->
+      <section class="four-section">
+
+        <ul class="card-stats-section">
+          <li>
+            <mat-card class="example-card">
+              <mat-card-header>
+                <mat-card-title>Users</mat-card-title>
+                <mat-card-subtitle>
+                  6
+                </mat-card-subtitle>
+              </mat-card-header>
+            </mat-card>
+          </li>
+          <li>
+            <mat-card class="example-card">
+              <mat-card-header>
+                <mat-card-title>Jobs</mat-card-title>
+                <mat-card-subtitle>
+                  10
+                </mat-card-subtitle>
+              </mat-card-header>
+            </mat-card>
+          </li>
+          <li>
+            <mat-card class="example-card">
+              <mat-card-header>
+                <mat-card-title>Disscussion</mat-card-title>
+                <mat-card-subtitle>
+                  25
+                </mat-card-subtitle>
+              </mat-card-header>
+            </mat-card>
+          </li>
+          <li>
+            <mat-card class="example-card">
+              <mat-card-header>
+                <mat-card-title>Comments</mat-card-title>
+                <mat-card-subtitle>
+                  01
+                </mat-card-subtitle>
+              </mat-card-header>
+            </mat-card>
+          </li>
+          <li>
+            <mat-card class="example-card">
+              <mat-card-header>
+                <mat-card-title>Organizations</mat-card-title>
+                <mat-card-subtitle>
+                  08
+                </mat-card-subtitle>
+              </mat-card-header>
+            </mat-card>
+          </li>
+        </ul>
+      </section>
+      <!-- ====================END FOUT-SECTION ===================== -->
+
+
+
+    </mat-sidenav-content>
+    <!-- ==============END-MIDDLE-CONTENT-SECTION============ -->
+
+  </mat-sidenav-container>
+
+
+</ng-container>
