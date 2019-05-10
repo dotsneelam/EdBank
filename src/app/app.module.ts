@@ -7,13 +7,12 @@ import { AppComponent } from './app.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
-import { MatInputModule,MatButtonModule, } from '@angular/material';
+import { MatInputModule, MatButtonModule, } from '@angular/material';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
-  ],
+    LoginComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
