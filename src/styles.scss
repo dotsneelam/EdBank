@@ -1,0 +1,48 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+
+}
+
+
+body{
+  white-space: normal;
+}
+
+.mat-form-field-flex{
+  height: 70.3px;
+  outline: none;
+}
+.mat-form-field-flex:hover, .mat-form-field-flex:focus,
+.login-bg .mat-form-field:focus,
+.login-bg .mat-form-field:hover{
+  outline: none;
+}
+.mat-form-field-appearance-outline .mat-form-field-wrapper:focus {
+  outline: none;
+}
+.mat-form-field-infix {
+  padding: 0em 0 1em 0 !important;
+}
+.login-bg input{
+  font-size: 21px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.86;
+        letter-spacing: normal;
+        text-align: left;
+}
+input::placeholder{
+  color:#707070;
+}
+.mat-form-field{
+  width: 100%;
+}
+.mat-form-field-appearance-outline .mat-form-field-outline-end, .mat-form-field-appearance-outline .mat-form-field-outline-start{
+  border-color: #707070 !important;
+  outline: none;
+}
